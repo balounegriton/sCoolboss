@@ -81,6 +81,7 @@ body {
   margin-bottom: 5vh;
   text-decoration: none;
   color: rgb(0, 0, 0);
+  cursor: pointer;
   
 }
 .texteColor{

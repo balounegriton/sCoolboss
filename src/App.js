@@ -23,33 +23,50 @@ class App extends Component {
     };
   }
 
-
+  ////////////// test pour voir si Onclick function ( il fonctione juste sur l'image 9 qui est au dessu de tout )  //////////
   test = () => {
-    console.log("alalalo")
+    console.log("IMAGE 9 Click")
   }
 
-  bus = () => {
-    if (this.state.bus === true) {
-      if (this.state.project === false && this.state.series === false) {
-        this.setState({
-          series: true,
-          project: true
-        })
-        document.getElementById("project").className = "texte "
-        document.getElementById("series").className = "texte "
-      }
+
+  //////////////////// La function pour le navBar ( la fonction bus est Ok, mais celle project et series son a revoir/\\\\\\\\\\\\\\\\\\\\\\
+
+  busNav = () => {
+
+    if (this.state.project === false && this.state.series === false && this.state.bus === true) {
+      this.setState({
+        series: true,
+        project: true,
+        bus: false
+      })
+      document.getElementById("project").className = "texte "
+      document.getElementById("series").className = "texte "
+      document.getElementById("bus").className = "texte texteColor "
+    }
+    else if (this.state.project === true && this.state.series === true && this.state.bus === true) {
+      this.setState({
+        series: false,
+        project: false,
+
+      })
+      document.getElementById("project").className = "texte texteColor "
+      document.getElementById("series").className = "texte texteColor "
+    }
+    else if (this.state.bus === false) {
+      this.setState({ bus: true })
+      document.getElementById("bus").className = "texte"
+    }
+    else {
       this.setState({ bus: false })
       document.getElementById("bus").className = "texte texteColor"
     }
-  
-    else {
-      document.getElementById("bus").className = "texte "
-      this.setState({ bus: true })
-    }
+
+
+
   }
 
 
-  project = () => {
+  projectNav = () => {
     if (this.state.project === true) {
       if (this.state.bus === false && this.state.series === false) {
         this.setState({
@@ -69,7 +86,7 @@ class App extends Component {
     }
   }
 
-  series = () => {
+  seriesNav = () => {
     if (this.state.series === true) {
       if (this.state.bus === false && this.state.project === false) {
         this.setState({
@@ -89,6 +106,9 @@ class App extends Component {
     }
   }
 
+
+
+
   render() {
 
     return (
@@ -96,9 +116,9 @@ class App extends Component {
 
       <div >
         <div className="navbar">
-          <a id="bus" className="texte" onClick={this.bus} >bus</a>
-          <a id="project" className="texte" onClick={this.project} >project</a>
-          <a id="series" className="texte" onClick={this.series} >series</a>
+          <a id="bus" className="texte" onClick={this.busNav} >bus</a>
+          <a id="project" className="texte" onClick={this.projectNav} >project</a>
+          <a id="series" className="texte" onClick={this.seriesNav} >series</a>
           <a className="texte" onClick={this.plus}>+</a>
         </div>
         {/* ////////// image 1 Landing page */}
@@ -106,7 +126,7 @@ class App extends Component {
         <div className="content">
           <div className="wrapper ">
             <div className="box" data-scroll-speed="1">
-              <img src={image1} className="image1" alt="" onClick={this.test} />
+              <img src={image1} className="image1" alt="" />
             </div>
           </div>
 
