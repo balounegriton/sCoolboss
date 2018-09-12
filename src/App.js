@@ -31,7 +31,7 @@ class App extends Component {
 
         {/* ////////// image 1 Landing page */}
 
-        {/* <div className="content">
+        <div className="content">
 
           <div className="wrapper ">
             <div className="box" data-scroll-speed="20">
@@ -42,10 +42,10 @@ class App extends Component {
           </div>
 
 
-        </div> */}
+        </div>
 
         {/* ////////// image 2 projet */}
-        {/* <div className="content">
+        <div className="content">
 
           <div className="wrapper ">
             <div className="box" data-scroll-speed="5">
@@ -53,11 +53,11 @@ class App extends Component {
             </div>
 
           </div>
-        </div> */}
+        </div>
 
 
         {/* ////////// image 3 projet */}
-        {/* <div className="content">
+        <div className="content">
 
           <div className="wrapper ">
             <div className="box" data-scroll-speed="1">
@@ -65,7 +65,7 @@ class App extends Component {
             </div>
 
           </div>
-        </div> */}
+        </div>
 
 <div onMouseMove={this._onMouseMove.bind(this)}>
       <h1>Mouse coordinates: { x } { y }</h1>
