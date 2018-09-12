@@ -10,7 +10,7 @@ body {
   /* /////// Paralax speed vodoo magic///////// */
 
   .content {
-  height: 19000px;
+  height: 500px;
   }
   .wrapper {
   display: -webkit-box;
@@ -50,60 +50,61 @@ body {
   
   }
 
-/* /////////////// hover /////////////////////////////// */
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
-}
-.container {
-  position: relative;
-  width: 50%;
-  
-}
-
-.container:hover .overlay {
-  opacity: 1;
-}
 
 
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
+
 /* /////////////// IMAGE /////////////////////////////// */
 .image1{
-  width: 30vw;
-  margin-top:10vh;
+  width: 90vw;
+  margin-top:8vh;
 
 }
 
 .image2{
   width: 60vw;
-  margin-top:50vh;
+  margin-top:110vh;
   margin-left: 30vw;
   
   
 }
 .image3{
   width: 30vw;
-  margin-top:90vh;
+  margin-top:120vh;
   margin-left: -30vw;
-  
-  
+}
+
+.image4{
+  width: 20vw;
+  margin-top:220vh;
+  margin-left: 40vw;
+}
+
+.image5{
+  width: 30vw;
+  margin-top:420vh;
+ 
+}
+
+.image6{
+  width: 30vw;
+  margin-top:155vh;
+  margin-left: 39vw;
+}
+
+.image7{
+  width: 30vw;
+  margin-top:110vh;
+  margin-left: -30vw;
+}
+
+.image8{
+  width: 20vw;
+  margin-top:110vh;
+  margin-left: 30vw;
+}
+
+.image9{
+  width: 30vw;
+  margin-top:110vh;
+  margin-left: -60vw;
 }

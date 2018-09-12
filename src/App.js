@@ -4,40 +4,27 @@ import './App.css';
 import image1 from './image/1.jpg'
 import image2 from './image/2.jpg'
 import image3 from './image/3.jpg'
-
-
-
-
+import image4 from './image/4.jpg'
+import image5 from './image/5.jpg'
+import image6 from './image/6.jpg'
+import image7 from './image/7.jpg'
+import image8 from './image/8.jpg'
+import image9 from './image/9.jpg'
 
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { x: 0, y: 0 };
-  }
 
-  _onMouseMove(e) {
-    this.setState({ x: e.screenX, y: e.screenY });
-  }
-
-  test = () => {
-    console.log("allo")
-
-  }
   render() {
-    const { x, y } = this.state;
+
     return (
-      <div className="content" onMouseMove={this._onMouseMove.bind(this)}>
+      <div className="content" >
 
         {/* ////////// image 1 Landing page */}
 
         <div className="content">
-
           <div className="wrapper ">
-            <div className="box" data-scroll-speed="20">
-
-              <img src={image1} className="image1" alt="" onClick={this.test} />
-
+            <div className="box" data-scroll-speed="1">
+              <img src={image1} className="image1" alt="" />
             </div>
           </div>
 
@@ -48,8 +35,8 @@ class App extends Component {
         <div className="content">
 
           <div className="wrapper ">
-            <div className="box" data-scroll-speed="5">
-              <img src={image2} className="image2" alt="" onClick={this.test} />
+            <div className="box" data-scroll-speed="3">
+              <img src={image2} className="image2" alt="" />
             </div>
 
           </div>
@@ -60,16 +47,85 @@ class App extends Component {
         <div className="content">
 
           <div className="wrapper ">
-            <div className="box" data-scroll-speed="1">
-              <img src={image3} className="image3" alt="" onClick={this.test} />
+            <div className="box" data-scroll-speed="5">
+              <img src={image3} className="image3" alt="" />
             </div>
 
           </div>
         </div>
 
-<div onMouseMove={this._onMouseMove.bind(this)}>
-      <h1>Mouse coordinates: { x } { y }</h1>
-    </div>;
+        {/* ////////// image 4 projet */}
+        <div className="content">
+
+          <div className="wrapper ">
+            <div className="box" data-scroll-speed="1">
+              <img src={image4} className="image4" alt="" />
+            </div>
+
+          </div>
+        </div>
+
+        {/* ////////// image 5 projet */}
+        <div className="content">
+
+          <div className="wrapper ">
+            <div className="box" data-scroll-speed="1">
+              <img src={image5} className="image5" alt="" />
+            </div>
+
+          </div>
+        </div>
+
+
+        {/* ////////// image 6 projet */}
+        <div className="content">
+
+          <div className="wrapper ">
+            <div className="box" data-scroll-speed="5">
+              <img src={image6} className="image6" alt="" />
+            </div>
+
+          </div>
+        </div>
+
+
+        {/* ////////// image 7 projet */}
+        <div className="content">
+
+          <div className="wrapper ">
+            <div className="box" data-scroll-speed="1">
+              <img src={image7} className="image7" alt="" />
+            </div>
+
+          </div>
+        </div>
+
+        {/* ////////// image 8 projet */}
+        <div className="content">
+
+          <div className="wrapper ">
+            <div className="box" data-scroll-speed="5 ">
+              <img src={image8} className="image8" alt="" />
+            </div>
+
+          </div>
+        </div>
+
+
+        {/* ////////// image 9 projet */}
+        <div className="content">
+
+          <div className="wrapper ">
+            <div className="box" data-scroll-speed="10">
+              <img src={image9} className="image9" alt="" />
+            </div>
+
+          </div>
+        </div>
+
+
+        {/* ///////////// dernier div a laisser \\\\\\\\\\\\\\ */}
+
       </div>
 
     );
