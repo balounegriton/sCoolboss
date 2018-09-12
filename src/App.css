@@ -50,13 +50,50 @@ body {
   
   }
 
+/* /////////////// navbar /////////////////////////////// */
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10000;
+}
 
 
 
+.texte:hover:not(.texteColor)  {
+  color: rgb(36, 36, 36)
+}
+.texteColor:hover  {
+  color: rgb(199, 199, 199)
+}
+.texte{
+  font-size: 55px;
+  font: bolder;
+  text-align: center;
+  padding: 0px 26px;
+  margin-bottom: 5vh;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  
+}
+.texteColor{
+
+  color: rgb(235, 235, 235);
+}
 /* /////////////// IMAGE /////////////////////////////// */
+
+
 .image1{
-  width: 90vw;
-  margin-top:8vh;
+  min-height:  95vh;
+  min-width: 90vw;
+  margin-top:2.5vh;
 
 }
 

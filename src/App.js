@@ -13,18 +13,100 @@ import image9 from './image/9.jpg'
 
 
 class App extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      bus: true,
+      project: true,
+      series: true
+    };
+  }
+
+
+  test = () => {
+    console.log("alalalo")
+  }
+
+  bus = () => {
+    if (this.state.bus === true) {
+      if (this.state.project === false && this.state.series === false) {
+        this.setState({
+          series: true,
+          project: true
+        })
+        document.getElementById("project").className = "texte "
+        document.getElementById("series").className = "texte "
+      }
+      this.setState({ bus: false })
+      document.getElementById("bus").className = "texte texteColor"
+    }
+  
+    else {
+      document.getElementById("bus").className = "texte "
+      this.setState({ bus: true })
+    }
+  }
+
+
+  project = () => {
+    if (this.state.project === true) {
+      if (this.state.bus === false && this.state.series === false) {
+        this.setState({
+          bus: true,
+          series: true,
+
+        })
+        document.getElementById("bus").className = "texte "
+        document.getElementById("series").className = "texte "
+      }
+      this.setState({ project: false })
+      document.getElementById("project").className = "texte texteColor"
+    }
+    else {
+      this.setState({ project: true })
+      document.getElementById("project").className = "texte "
+    }
+  }
+
+  series = () => {
+    if (this.state.series === true) {
+      if (this.state.bus === false && this.state.project === false) {
+        this.setState({
+          project: true,
+          bus: true,
+
+        })
+        document.getElementById("project").className = "texte "
+        document.getElementById("bus").className = "texte "
+      }
+      this.setState({ series: false })
+      document.getElementById("series").className = "texte texteColor "
+    }
+    else {
+      this.setState({ series: true })
+      document.getElementById("series").className = "texte "
+    }
+  }
 
   render() {
 
     return (
-      <div className="content" >
 
+
+      <div >
+        <div className="navbar">
+          <a id="bus" className="texte" onClick={this.bus} >bus</a>
+          <a id="project" className="texte" onClick={this.project} >project</a>
+          <a id="series" className="texte" onClick={this.series} >series</a>
+          <a className="texte" onClick={this.plus}>+</a>
+        </div>
         {/* ////////// image 1 Landing page */}
 
         <div className="content">
           <div className="wrapper ">
             <div className="box" data-scroll-speed="1">
-              <img src={image1} className="image1" alt="" />
+              <img src={image1} className="image1" alt="" onClick={this.test} />
             </div>
           </div>
 
@@ -36,7 +118,7 @@ class App extends Component {
 
           <div className="wrapper ">
             <div className="box" data-scroll-speed="3">
-              <img src={image2} className="image2" alt="" />
+              {this.state.bus && <img src={image2} className="image2" alt="" />}
             </div>
 
           </div>
@@ -48,7 +130,7 @@ class App extends Component {
 
           <div className="wrapper ">
             <div className="box" data-scroll-speed="5">
-              <img src={image3} className="image3" alt="" />
+              {this.state.series && <img src={image3} className="image3" alt="" />}
             </div>
 
           </div>
@@ -59,7 +141,7 @@ class App extends Component {
 
           <div className="wrapper ">
             <div className="box" data-scroll-speed="1">
-              <img src={image4} className="image4" alt="" />
+              {this.state.project && <img src={image4} className="image4" alt="" />}
             </div>
 
           </div>
@@ -70,7 +152,7 @@ class App extends Component {
 
           <div className="wrapper ">
             <div className="box" data-scroll-speed="1">
-              <img src={image5} className="image5" alt="" />
+              {this.state.project && <img src={image5} className="image5" alt="" />}
             </div>
 
           </div>
@@ -82,7 +164,7 @@ class App extends Component {
 
           <div className="wrapper ">
             <div className="box" data-scroll-speed="5">
-              <img src={image6} className="image6" alt="" />
+              {this.state.series && <img src={image6} className="image6" alt="" />}
             </div>
 
           </div>
@@ -94,7 +176,7 @@ class App extends Component {
 
           <div className="wrapper ">
             <div className="box" data-scroll-speed="1">
-              <img src={image7} className="image7" alt="" />
+              {this.state.bus && <img src={image7} className="image7" alt="" />}
             </div>
 
           </div>
@@ -105,7 +187,7 @@ class App extends Component {
 
           <div className="wrapper ">
             <div className="box" data-scroll-speed="5 ">
-              <img src={image8} className="image8" alt="" />
+              {this.state.project && <img src={image8} className="image8" alt="" />}
             </div>
 
           </div>
@@ -117,7 +199,7 @@ class App extends Component {
 
           <div className="wrapper ">
             <div className="box" data-scroll-speed="10">
-              <img src={image9} className="image9" alt="" />
+              {this.state.bus && <img src={image9} className="image9" alt="" onClick={this.test} />}
             </div>
 
           </div>
