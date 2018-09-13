@@ -137,8 +137,9 @@ class App extends Component {
         <div className="content">
 
           <div className="wrapper ">
-            <div className="box" data-scroll-speed="3">
-              {this.state.bus && <img src={image2} className="image2" alt="" />}
+            <div className="box hover2" data-scroll-speed="600">
+              {this.state.bus && 
+              <img src={image2} className="image2" alt="" />}
             </div>
 
           </div>
@@ -148,9 +149,9 @@ class App extends Component {
         {/* ////////// image 3 projet */}
         <div className="content">
 
-          <div className="wrapper ">
-            <div className="box" data-scroll-speed="5">
-              {this.state.series && <img src={image3} className="image3" alt="" />}
+          <div className="wrapper  ">
+            <div className="box hover3" data-scroll-speed="3">
+              {this.state.series && <img src={image3} className="image3" alt=""onClick={this.test} />}
             </div>
 
           </div>
@@ -160,7 +161,7 @@ class App extends Component {
         <div className="content">
 
           <div className="wrapper ">
-            <div className="box" data-scroll-speed="1">
+            <div className="box hover4" data-scroll-speed="110101001">
               {this.state.project && <img src={image4} className="image4" alt="" />}
             </div>
 
@@ -171,7 +172,7 @@ class App extends Component {
         <div className="content">
 
           <div className="wrapper ">
-            <div className="box" data-scroll-speed="1">
+            <div className="box hover5" data-scroll-speed="1">
               {this.state.project && <img src={image5} className="image5" alt="" />}
             </div>
 
@@ -183,7 +184,7 @@ class App extends Component {
         <div className="content">
 
           <div className="wrapper ">
-            <div className="box" data-scroll-speed="5">
+            <div className="box hover6" data-scroll-speed="500000">
               {this.state.series && <img src={image6} className="image6" alt="" />}
             </div>
 
@@ -195,8 +196,10 @@ class App extends Component {
         <div className="content">
 
           <div className="wrapper ">
-            <div className="box" data-scroll-speed="1">
-              {this.state.bus && <img src={image7} className="image7" alt="" />}
+            <div className="box hover7" data-scroll-speed="1">
+              { this.state.bus &&
+                 <div className="imageHover"><img src={image7} className="image7" alt="" /></div>
+                 }
             </div>
 
           </div>
@@ -206,7 +209,7 @@ class App extends Component {
         <div className="content">
 
           <div className="wrapper ">
-            <div className="box" data-scroll-speed="5 ">
+            <div className="box hover8" data-scroll-speed="5 ">
               {this.state.project && <img src={image8} className="image8" alt="" />}
             </div>
 
@@ -218,8 +221,10 @@ class App extends Component {
         <div className="content">
 
           <div className="wrapper ">
-            <div className="box" data-scroll-speed="10">
-              {this.state.bus && <img src={image9} className="image9" alt="" onClick={this.test} />}
+            <div className="box" data-scroll-speed="1">
+              { this.state.bus &&
+                <div className="imageHover hover9 "> <img src={image9} className="image9" alt="" onClick={this.test} /> </div>
+                }
             </div>
 
           </div>

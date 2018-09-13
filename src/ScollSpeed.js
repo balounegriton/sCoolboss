@@ -1,8 +1,5 @@
 import $ from 'jquery'
 
-
-
-
 $.fn.moveIt = function(){
   var $window = $(window);
   var instances = [];
