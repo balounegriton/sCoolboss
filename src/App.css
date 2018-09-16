@@ -118,7 +118,7 @@ position: relative;
 .image5{
   width: 30vw;
   margin-left: -10vw;
-  margin-top:100vh;
+  margin-top:70vh;
   position: absolute;
  
 }
@@ -132,7 +132,7 @@ position: relative;
 
 .image7{
   width: 30vw;
-  margin-top:300vh;
+  margin-top:250vh;
   margin-left: 1px;
   position: absolute;
   
@@ -146,81 +146,43 @@ position: relative;
 }
 
 .image9{
-  width: 25vw;
+  width: 35vw;
   margin-top:60vh;
-  margin-left: -40vw;
+  margin-left: -44vw;
   position: absolute;
 
 }
 
 
-/* /////////////////////// image hover /////////////////////////// */
-.image2:hover{
-  opacity: 0.9;
-  filter: alpha(opacity=50); /* For IE8 and earlier */
-}
 
-.image3:hover{
-  opacity: 0.9;
-  filter: alpha(opacity=50); /* For IE8 and earlier */
+/* 
+//////////////////moving z-index when hover mouse /////////// */
 
-}
-
-
-.image4:hover{
-  opacity: 0.9;
-  filter: alpha(opacity=50); /* For IE8 and earlier */
-}
-
-.image5:hover{
-  opacity: 0.9;
-  filter: alpha(opacity=50); /* For IE8 and earlier */
-}
-
-.image6:hover{
-  opacity: 0.9;
-  filter: alpha(opacity=50); /* For IE8 and earlier */
-}
-
-.image7:hover{
-  opacity: 0.9;
-  filter: alpha(opacity=50); /* For IE8 and earlier */
-}
-
-.image8:hover{
-  opacity: 0.9;
-  filter: alpha(opacity=50); /* For IE8 and earlier */
-}
-
-.image9:hover{
- opacity: 0.9;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
-}
-
-.hover2:hover {
-  z-index: 100;
-}
-.hover3:hover {
-  z-index: 100;
-}
-.hover4:hover {
-  z-index: 100;
-}
-.hover5:hover {
-  z-index: 100;
-}
-.hover6:hover {
-  z-index: 100;
-}
-.hover7:hover {
-  z-index: 100;
-}
-.hover8:hover {
-  z-index: 100;
-}
-.hover9:hover {
+.imgHoverIndex:hover {
   z-index: 100;
 }
 
+/* ///////////////// change z-index of specific project (hover2 = image2) /////////// */
+.z-indexImg2{ z-index: 30;}
+.z-indexImg3{ z-index: 10;}
+.z-indexImg5{ z-index: 20;}
 
-.hover2{ z-index: 100;}
+
+
+/* ///////// overlay of project ////// */
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.9);
+  overflow-x: hidden;
+  z-index: 1001;
+}
+
+
+
+
+
+.imagetest{
+  width: 100vw;
+}
