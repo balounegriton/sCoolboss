@@ -87,9 +87,10 @@ position: relative;
 
 .image1{
   margin-top: 2.5vh;
+  max-height:  95vh;
+  max-width: 95vw;
   min-height:  95vh;
   min-width: 95vw;
-
   
 }
 
@@ -101,8 +102,8 @@ position: relative;
   
 }
 .image3{
-  margin-top: 5vh;
-  width: 30vw;
+  margin-top: 195vh;
+  margin-left: -20vw;
   position: absolute;
 
 }
@@ -153,6 +154,18 @@ position: relative;
 
 }
 
+.reactHover{
+  position: fixed;
+}
+
+.image10{
+  margin-top: 5vh;
+  width: 30vw;
+  position: absolute;
+
+}
+
+
 
 
 /* 
@@ -168,21 +181,3 @@ position: relative;
 .z-indexImg5{ z-index: 20;}
 
 
-
-/* ///////// overlay of project ////// */
-.overlay {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  background-color: rgba(255, 255, 255, 0.9);
-  overflow-x: hidden;
-  z-index: 1001;
-}
-
-
-
-
-
-.imagetest{
-  width: 100vw;
-}

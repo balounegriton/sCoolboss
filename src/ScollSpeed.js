@@ -22,7 +22,7 @@ var moveItItem = function(el){
 };
 
 moveItItem.prototype.update = function(scrollTop){
-  this.el.css('transform', 'translateY(' + -(scrollTop / this.speed) + 'px)');
+  this.el.css('transform', 'translateY(' + -(scrollTop / this.speed) + 'vh)');
 };
 
 // Initialization
