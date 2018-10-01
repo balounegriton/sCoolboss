@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.65d43753.css",
-  "main.css.map": "static/css/main.65d43753.css.map",
-  "main.js": "static/js/main.eea1c7f9.js",
-  "main.js.map": "static/js/main.eea1c7f9.js.map",
+  "main.css": "static/css/main.7b81440c.css",
+  "main.css.map": "static/css/main.7b81440c.css.map",
+  "main.js": "static/js/main.f8685d11.js",
+  "main.js.map": "static/js/main.f8685d11.js.map",
   "static/media/1.jpg": "static/media/1.9a08243a.jpg",
   "static/media/10.png": "static/media/10.ecb7151f.png",
   "static/media/2.jpg": "static/media/2.80acbf76.jpg",
@@ -21,6 +21,5 @@
   "static/media/hover-6.png": "static/media/hover-6.3d934792.png",
   "static/media/hover-7.jpg": "static/media/hover-7.2106d24e.jpg",
   "static/media/hover-8.jpg": "static/media/hover-8.b68b1179.jpg",
-  "static/media/hover-9.jpg": "static/media/hover-9.a8c419ab.jpg",
-  "static/media/page.jpg": "static/media/page.4e20b78c.jpg"
+  "static/media/hover-9.jpg": "static/media/hover-9.a8c419ab.jpg"
 }
