@@ -4,7 +4,8 @@
 
 
 body {
-  font-family: arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif,sans-serif;
+  height: 350vh
   }
 
   /* /////// Paralax speed vodoo magic///////// */
@@ -61,12 +62,8 @@ position: relative;
   z-index: 10000;
 }
 
-.texte:hover:not(.texteColor)  {
-  color: rgb(36, 36, 36)
-}
-.texteColor:hover  {
-  color: rgb(199, 199, 199)
-}
+
+
 .texte{
   font-size: 55px;
   font: bolder;
@@ -75,25 +72,41 @@ position: relative;
   margin-bottom: 5vh;
   text-decoration: none;
   color: rgb(0, 0, 0);
-  cursor: pointer;
+  cursor: cell;
   
 }
 .texteColor{
+  font-size: 55px;
+  font: bolder;
+  text-align: center;
+  padding: 0px 26px;
+  margin-bottom: 5vh;
+  text-decoration: none;
+  cursor: crosshair;
+  color: white;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
 
-  color: rgb(235, 235, 235);
 }
 /* /////////////// IMAGE /////////////////////////////// */
 
 
 .image1{
-  margin-top: 2.5vh;
-  max-height:  95vh;
-  max-width: 95vw;
-  min-height:  95vh;
-  min-width: 95vw;
-  
+  margin-top: 10vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
+.image1div{    height: 100vh;
+  width: 100vw;
+  width: red;
+  background: white;
 
+}
 .image2{
   width: 50vw;
   margin-top: 10vh;
@@ -102,7 +115,8 @@ position: relative;
   
 }
 .image3{
-  margin-top: 195vh;
+  width: 88vw;
+  margin-top: 265vh;
   margin-left: -20vw;
   position: absolute;
 
@@ -118,24 +132,25 @@ position: relative;
 
 .image5{
   width: 30vw;
-  margin-left: -10vw;
-  margin-top:70vh;
+  margin-left: -20vw;
+  margin-top:130vh;
   position: absolute;
  
 }
 
 .image6{
   width: 60vw;
-  margin-top:50vh;
+  margin-top:150vh;
   margin-left: 3vw;
   position: absolute;
 }
 
 .image7{
   width: 30vw;
-  margin-top:250vh;
-  margin-left: 1px;
+  margin-top:350vh;
+  margin-left:-30vw;
   position: absolute;
+
   
 }
 
@@ -148,15 +163,13 @@ position: relative;
 
 .image9{
   width: 35vw;
-  margin-top:60vh;
-  margin-left: -44vw;
+  margin-top:160vh;
+  margin-left: -4vw;
   position: absolute;
 
 }
 
-.reactHover{
-  position: fixed;
-}
+
 
 .image10{
   margin-top: 5vh;
@@ -179,5 +192,78 @@ position: relative;
 .z-indexImg2{ z-index: 30;}
 .z-indexImg3{ z-index: 10;}
 .z-indexImg5{ z-index: 20;}
+.z-indexImg1{ z-index: 30000000;}
+
+
+.cursorDefault{
+  cursor: pointer;
+}
+
+.background{
+ position: fixed;
+ z-index: 1;
+ pointer-events: none;
+;
+ 
+}
+@media (max-width: 640px) {
+	* {
+		box-sizing: border-box;
+	}
+	
+	/* passer body (et tous les éléments de largeur fixe) en largeur automatique */
+
+	body {
+		width: auto;
+		margin: 0;
+		padding: 0;
+	}
+	
+	/* gestion des mots longs */
+
+	textarea,
+	table,
+	td,
+	th,
+	code,
+	pre,
+	samp {
+		-webkit-hyphens: auto; /* césure propre */
+		-moz-hyphens: auto;
+		hyphens: auto;
+		word-wrap: break-word; /* passage à la ligne forcé */
+	}
+	
+	code,
+	pre,
+	samp {
+		white-space: pre-wrap; /* passage à la ligne spécifique pour les éléments à châsse fixe */
+	}
+	
+	/* Passer à une seule colonne (à appliquer aux éléments multi-colonnes) */
+
+	.element1,
+	.element2 {
+		float: none;
+		width: auto;
+	}
+	
+	/* masquer les éléments superflus */
+
+	.hide_mobile {
+		display: none !important;
+  }
+  
+
+
+.texte {
+    font-size: larger;
+}
+
+.texteColor {
+  font-size: larger;
+}
+	
+}
 
 

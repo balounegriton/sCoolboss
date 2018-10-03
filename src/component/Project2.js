@@ -1,20 +1,29 @@
 import React, { Component } from 'react';
-import './Project.css';
-import test from "../image/page.jpg"
+import Lottie from 'react-lottie';
+import * as animationData from '/Users/noeprovost/Desktop/sCoolboss/src/pinjump.json'
 
 
 class Project2 extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {isStopped: false, isPaused: false};
+  }
+ 
   render() {
-    return (
-      <div >
-        {/* //////////////overlay 1 //////////////// */}
-        <div className="overlay3" onClick={this.props.action}>
-          <img src={test} className="page" alt="" />
 
-        </div>
-      </div>
-
-    );
+ 
+    const defaultOptions = {
+      loop: true,
+      autoplay: true, 
+      animationData: animationData,
+      rendererSettings: {
+        preserveAspectRatio: 'xMidYMid slice'
+      }
+    };
+ 
+    return <div>
+      <Lottie options={defaultOptions}/>
+    </div>
   }
 }
 
