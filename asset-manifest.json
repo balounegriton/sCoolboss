@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.6bccb4a4.css",
-  "main.css.map": "static/css/main.6bccb4a4.css.map",
-  "main.js": "static/js/main.86e14b9c.js",
-  "main.js.map": "static/js/main.86e14b9c.js.map",
+  "main.css": "static/css/main.7ffdfec3.css",
+  "main.css.map": "static/css/main.7ffdfec3.css.map",
+  "main.js": "static/js/main.2200425b.js",
+  "main.js.map": "static/js/main.2200425b.js.map",
   "static/media/1.jpg": "static/media/1.1b2c146d.jpg",
   "static/media/10.jpg": "static/media/10.8e72ffe8.jpg",
   "static/media/2.jpg": "static/media/2.d41adbe1.jpg",
@@ -13,5 +13,6 @@
   "static/media/7.jpg": "static/media/7.f8f84d61.jpg",
   "static/media/8.jpg": "static/media/8.7f334eb2.jpg",
   "static/media/9.jpg": "static/media/9.6118a0e6.jpg",
-  "static/media/Gotham-Bold.otf": "static/media/Gotham-Bold.9c35bf87.otf"
+  "static/media/Gotham-Bold.otf": "static/media/Gotham-Bold.9c35bf87.otf",
+  "static/media/txtBold.png": "static/media/txtBold.d827d4c3.png"
 }
