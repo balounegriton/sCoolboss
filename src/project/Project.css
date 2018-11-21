@@ -1,0 +1,97 @@
+.imageProjectIntro{
+  width: 1100px;
+  margin-top: 200px ;
+  float: right;
+
+}
+
+.exitProjet{
+  font-size: 33px;
+  font: bolder;
+  text-align: center;
+  text-decoration: none;
+  color:rgb(0, 0, 0);
+  cursor: cell;
+  margin-top: 22px;
+
+}
+
+.navbarProjet {
+  margin: 48px 63px;
+  position: fixed;
+  top: 0;
+  right:  0;
+
+}
+
+.float{
+  float: right
+}
+.texteTitreProjet{
+  margin-left: -925px;
+  width: 600px;
+  margin-top: 162px;
+
+
+
+}
+
+.imageSize{
+  
+  width: 100%;
+}
+
+.page{
+  height: 10000px;
+}
+
+.textProjet{
+  clear: both;
+  margin-top: 300px;
+}
+
+.imagetexte01{
+  width: 600px
+  
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow-x: hidden;   
+  z-index: 30000;
+}
+
+.overlay2 {
+  margin-top: 50px;
+  height: 100%;
+  width: 90%;
+  position: fixed;
+  background-color: rgba(255, 255, 255);
+  overflow-x: hidden;
+  z-index: 30000;
+  background: #ffffffe5;
+  
+}
+
+.overlay3 {
+width: 100vw
+  
+}
+
+.a{
+    margin-top: 90vh
+}
+
+.flex{
+display: flex;
+justify-content: left
+}
+
+.img8{
+width: 10vw;
+position: fixed;
+z-index: 10000000000;
+}

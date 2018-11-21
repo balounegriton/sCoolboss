@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+[class*="col-"] {
+  float: left;
+
+  
+}
+
+
+/* //////// grid total 31 /////// */
+.col-1 {width: 3.22580645%;}
+.col-2 {width: 6.451612903%;}
+.col-3 {width: 9.677419355%;}
+.col-4 {width: 12.90322581%;}
+.col-5 {width: 16.12903226%;}
+.col-6 {width: 19.35483871%;}
+.col-7 {width: 22.58064516%;}
+.col-8 {width: 25.80645161%;}
+.col-9 {width: 29.03225806%;}
+.col-10 {width: 32.25806452%;}
+.col-11 {width: 35.48387097%;}
+.col-12 {width: 38.70967742%;}
+.col-13 {width: 41.93548387%;}
+.col-14 {width: 45.16129032%;}
+.col-15 {width: 48.38709677%;}
+.col-16 {width: 51.61290323%;}
+/* //////// grid total 31 /////// */
+
+
